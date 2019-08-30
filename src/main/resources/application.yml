@@ -1,6 +1,9 @@
 server:
-  port: 7000
+  port: 8700
 
 spring:
   application:
     name: boot
+
+
+
