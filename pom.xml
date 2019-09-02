@@ -70,6 +70,11 @@
                 <directory>src/main/resources</directory> <!--这里对应项目存放配置文件的目录-->
                 <!--开启filtering功能  -->
                 <filtering>true</filtering>
+                <includes>
+                    <!-- 项目打包完成的包中只包含当前环境文件 -->
+                    <include>application.properties</include>
+                    <include>application-${spring.profiles.active}.properties</include>
+                </includes>
             </resource>
         </resources>
         <plugins>
